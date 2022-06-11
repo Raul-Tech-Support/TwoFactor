@@ -1,0 +1,19 @@
+name: TwoFactor
+version: '${project.version}'
+main: raultechsupport.twofactor.TwoFactor
+api-version: 1.19
+softdepend:
+  - ImageOnMap
+commands:
+  2fa:
+    description: Login with your 2FA code.
+    usage: /<command> <2FA code>
+    permission: twofactor.use
+  register:
+    description: Register for 2FA.
+    usage: /<command>
+    permission: twofactor.use
+  verify:
+    description: Verify for 2FA.
+    usage: /<command> <2FA code>
+    permission: twofactor.use
